@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
+      "price": 500,
+      "brand": "pums",
+      "name": "shoes",
+      "category": "top-wear",
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
+      "price": 10011,
+      "brand": "pums",
+      "name": "shoes",
+      "category": "bottom-wear",
+      "gender": "female",
+      "id": 2
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
+      "price": 500,
+      "brand": "pums",
+      "name": "shoes",
+      "category": "foot-wear",
+      "gender": "kids",
+      "id": 3
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
+      "price": 500,
+      "brand": "pums",
+      "name": "dsa",
+      "category": "cat",
+      "gender": "555555555",
+      "id": 4
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
+      "price": 80000,
+      "brand": "pums",
+      "name": "shoes 2",
+      "category": "foot-wear",
+      "gender": "kids",
+      "id": 5
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
+      "price": 800,
+      "brand": "pums",
+      "name": "shoes 2",
+      "category": "bottom-wear",
+      "gender": "male",
+      "id": 6
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
+      "price": 9000,
+      "brand": "pums",
+      "name": "shoes 2",
+      "category": "bottom-wear",
+      "gender": "female",
+      "id": 7
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
+      "price": 5000,
+      "brand": "pums",
+      "name": "shoes",
+      "category": "top-wear",
+      "gender": "male",
+      "id": 8
+    }
+  ]
+}
