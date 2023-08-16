@@ -94,6 +94,7 @@ const DIV = styled.div`
   padding: 30px;
   margin-top: 130px;
   border-radius: 20px;
+  margin-top: 150px;
 
   button {
     width: 50%;
