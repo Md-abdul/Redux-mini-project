@@ -90,7 +90,7 @@ export const EditProduct = () => {
 
 const DIV = styled.div`
   width: 400px;
-  margin: auto;
+  margin: 100px;
   padding: 30px;
   margin-top: 130px;
   border-radius: 20px;
