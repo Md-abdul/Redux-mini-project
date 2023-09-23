@@ -1,6 +1,6 @@
 # Redux mini Project
 
-## Netlify Deploy Link :- https://64b38de11f52c1083b151c5e--dynamic-crisp-9f86ab.netlify.app/
+## Netlify Deploy Link :- [https://64b38de11f52c1083b151c5e--dynamic-crisp-9f86ab.netlify.app/](https://650f3c4ee70eae62f0e9f4dc--courageous-tarsier-058fd3.netlify.app/)
 
 The Redux mini project is a web application that allows users to perform CRUD operations (Create, Read, Update, Delete) on a specific dataset. The project utilizes Redux as a state management library to handle data flow and maintain a centralized state.
 
