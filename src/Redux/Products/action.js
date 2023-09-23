@@ -32,9 +32,9 @@ export const GetProducts = (obj) => (dispatch) => {
     });
 };
 
-export const deleteProducts = (id,) => (dispatch) => {
+export const deleteProducts = (id) => (dispatch) => {
   dispatch({ type: PRODUCT_REQUEST });
- return axios
+  return axios
     .delete(`https://bothdata.onrender.com/products/${id}`)
     .then((res) => {
       dispatch({ type: DELETE_PRODUCTS_REQUEST });
@@ -44,14 +44,14 @@ export const deleteProducts = (id,) => (dispatch) => {
     });
 };
 
-
-export const EditProducts = (id,data) => (dispatch) => {
-  dispatch({type:PRODUCT_REQUEST})
-  axios.patch(`https://bothdata.onrender.com/products/${id}`,data)
-  .then((res) => {
-    dispatch({type:PATCH_PRODUCTS_REQUEST})
-  })
-  .catch((err) => {
-    dispatch({type:PRODUCT_ERROR})
-  })
-}
+export const EditProducts = (id, data) => (dispatch) => {
+  dispatch({ type: PRODUCT_REQUEST });
+  axios
+    .patch(`https://bothdata.onrender.com/products/${id}`, data)
+    .then((res) => {
+      dispatch({ type: PATCH_PRODUCTS_REQUEST });
+    })
+    .catch((err) => {
+      dispatch({ type: PRODUCT_ERROR });
+    });
+};

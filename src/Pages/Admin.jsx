@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import {useDispatch} from 'react-redux'
 import styled from "styled-components";
-import { PostProducts } from "../Redux/Products/action";
-
+import { GetProducts, PostProducts } from "../Redux/Products/action";
+import {redirect} from "react-router-dom"
+//ssss
 const initialState = {
   image: "",
   price: "",
@@ -29,6 +30,8 @@ export const Admin = () => {
     // console.log(product)
     dispatch(PostProducts(product))
   }
+
+  // if()
 
   return (
     <WRAP>

@@ -7,15 +7,21 @@ import { useSearchParams } from "react-router-dom";
 
 export const ProductsList = () => {
   const [searchParams] = useSearchParams();
-  const data = useSelector((store) => store.productsReducer.products);
+  const { data, loading, error } = useSelector((store) => ({
+    data: store.productsReducer.products,
+    loading: store.productsReducer.isLoading,
+    error: store.productsReducer.isError,
+  }));
   const dispatch = useDispatch();
+
+  console.log(data);
 
   let obj = {
     params: {
       category: searchParams.getAll("category"),
       gender: searchParams.getAll("gender"),
-      _sort: searchParams.get('order') && 'price',
-      _order:searchParams.get('order'),
+      _sort: searchParams.get("order") && "price",
+      _order: searchParams.get("order"),
     },
   };
 
@@ -25,10 +31,20 @@ export const ProductsList = () => {
 
   return (
     <DIV>
-      {data.length > 0 &&
+      {loading ? (
+        <h1>Loading</h1>
+      ) : error ? (
+        <h1>Error</h1>
+      ) : (
+        data.length > 0 &&
         data.map((el) => {
           return <ProductsCard key={el.id} {...el} />;
-        })}
+        })
+      )}
+      {/* {data.length > 0 &&
+        data.map((el) => {
+          return <ProductsCard key={el.id} {...el} />;
+        })} */}
     </DIV>
   );
 };
@@ -40,5 +56,6 @@ const DIV = styled.div`
   gap: 20px;
   margin-top: -14px;
   margin-left: 40px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 `;
