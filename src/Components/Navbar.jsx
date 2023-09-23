@@ -18,7 +18,7 @@ export const Navbar = () => {
     </DIV>
   );
 };
-
+//
 const DIV = styled.div`
 
   position: fixed;
