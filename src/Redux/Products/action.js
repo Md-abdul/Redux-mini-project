@@ -11,7 +11,7 @@ import {
 export const PostProducts = (newProduct) => (dispatch) => {
   dispatch({ type: PRODUCT_REQUEST });
   axios
-    .post(`http://localhost:8080/products`, newProduct)
+    .post(`https://bothdata.onrender.com/products`, newProduct)
     .then((res) => {
       dispatch({ type: POST_PRODUCT_SUCRSS, payload: res.data });
     })
@@ -23,7 +23,7 @@ export const PostProducts = (newProduct) => (dispatch) => {
 export const GetProducts = (obj) => (dispatch) => {
   dispatch({ type: PRODUCT_REQUEST });
   axios
-    .get(`http://localhost:8080/products`, obj)
+    .get(`https://bothdata.onrender.com/products`, obj)
     .then((res) => {
       dispatch({ type: GET_PRODUCTS_REQUEST, payload: res.data });
     })
@@ -35,7 +35,7 @@ export const GetProducts = (obj) => (dispatch) => {
 export const deleteProducts = (id,) => (dispatch) => {
   dispatch({ type: PRODUCT_REQUEST });
  return axios
-    .delete(`http://localhost:8080/products/${id}`)
+    .delete(`https://bothdata.onrender.com/products/${id}`)
     .then((res) => {
       dispatch({ type: DELETE_PRODUCTS_REQUEST });
     })
@@ -47,7 +47,7 @@ export const deleteProducts = (id,) => (dispatch) => {
 
 export const EditProducts = (id,data) => (dispatch) => {
   dispatch({type:PRODUCT_REQUEST})
-  axios.patch(`http://localhost:8080/products/${id}`,data)
+  axios.patch(`https://bothdata.onrender.com/products/${id}`,data)
   .then((res) => {
     dispatch({type:PATCH_PRODUCTS_REQUEST})
   })
